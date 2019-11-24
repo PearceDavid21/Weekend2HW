@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E4090606"
+    >
+
+    <TextView
+        android:id="@+id/titletextView"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="User Login."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#FFE200"
+        android:ems="10"
+        android:hint="Username"
+        android:textColor="#0E0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titletextView" />
+
+    <EditText
+        android:id="@+id/phone_number_edittext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#FFE200"
+        android:ems="10"
+        android:hint="phonenumber"
+        android:textColor="#0C0B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_edittext" />
+
+    <Button
+        android:id="@+id/new_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background= "@drawable/roundedbutton"
+        android:text="Save new"
+        android:textSize="15dp"
+        android:color="#EEFFDD00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_number_edittext" />
+
+    <Button
+        android:id="@+id/show_saves_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Show Saves"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_button"
+        app:layout_constraintVertical_bias="0.256" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
